@@ -9,6 +9,11 @@ a {
   text-decoration: none;
   outline: 1; }
 
+.wrap::after {
+  content: '';
+  display: block;
+  clear: both; }
+
 #header {
   width: 90%;
   height: 100px;
@@ -47,5 +52,25 @@ a {
   background: hotpink;
   position: relative;
   z-index: 1; }
+
+#content {
+  padding: 100px 0; }
+  #content .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    #content .inner h1 {
+      font: bold 18px/1 "arial";
+      color: #444;
+      text-align: center;
+      margin-bottom: 30px; }
+    #content .inner .wrap article {
+      width: 380px;
+      float: left;
+      margin-right: 20px; }
+      #content .inner .wrap article .pic {
+        width: 100%;
+        height: 150px;
+        background: #555;
+        margin-bottom: 15px; }
 
 /*# sourceMappingURL=style.css.map */
